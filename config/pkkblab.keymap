@@ -51,54 +51,23 @@
     combos {
         compatible = "zmk,combos";
 
-        news {
-            bindings = <&kp N>;
-            key-positions = <10 11>;
-        };
-
-        desk {
-            bindings = <&kp LG(D)>;
-            key-positions = <11 12>;
-        };
-
-        create {
-            bindings = <&kp LG(E)>;
-            key-positions = <12 13>;
-        };
-
-        altf4 {
-            bindings = <&kp RA(F4)>;
-            key-positions = <13 14>;
-        };
-
-        guilock {
-            bindings = <&kp LG(L)>;
-            key-positions = <23 24>;
-        };
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
+        BS {
+            bindings = <&none>;
             key-positions = <8 9>;
+            timeout-ms = <10>;
+            require-prior-idle-ms = <0>;
         };
 
-        qw {
-            bindings = <&kp ESC>;
-            key-positions = <0 1>;
+        BB {
+            bindings = <&none>;
+            key-positions = <35 36>;
+            timeout-ms = <10>;
         };
 
-        bootloader {
-            bindings = <&bootloader>;
-            key-positions = <3 2 1 0>;
-        };
-
-        boot {
-            bindings = <&bootloader>;
-            key-positions = <9 8 7 6>;
-        };
-
-        toto {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <1 2>;
+        YY {
+            bindings = <&none>;
+            key-positions = <3 4>;
+            timeout-ms = <10>;
         };
     };
 
@@ -107,10 +76,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp E             &kp R      &out OUT_BLE  &kp Y  &kp U      &kp I       &kp O    &kp P
-&kp A  &kp S  &kp D             &kp F      &kp G         &kp H  &kp J      &kp K       &kp L    &kp ENTER
-&kp Z  &kp X  &kp C             &kp V      &kp B         &kp N  &kp M      &kp COMMA   &kp DOT  &mt RIGHT_SHIFT QUESTION
-&none  &none  &kp LEFT_CONTROL  &kp SPACE  &none         &none  &kp SPACE  &kp DELETE  &none    &none
+&kp Q  &kp W  &kp E             &kp R      &kp T  &kp Y  &kp U      &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D             &kp F      &kp G  &kp H  &kp J      &kp K      &kp L    &kp ENTER
+&kp Z  &kp X  &kp C             &kp V      &kp B  &kp N  &kp M      &kp COMMA  &kp DOT  &mt RIGHT_SHIFT QUESTION
+&none  &none  &kp LEFT_CONTROL  &kp SPACE  &none  &none  &kp SPACE  &kp RCTRL  &none    &none
             >;
         };
 
