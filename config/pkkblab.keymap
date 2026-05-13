@@ -61,30 +61,33 @@
         BS {
             bindings = <&kp BACKSPACE>;
             key-positions = <8 9>;
-            timeout-ms = <0>;
-            require-prior-idle-ms = <0>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
             layers = <0>;
         };
 
         BB {
             bindings = <&kp B>;
             key-positions = <25 26>;
-            timeout-ms = <0>;
+            timeout-ms = <100>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         YY {
             bindings = <&kp Y>;
             key-positions = <3 4>;
-            timeout-ms = <0>;
+            timeout-ms = <100>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         nn {
             bindings = <&kp N>;
             key-positions = <23 24>;
-            timeout-ms = <0>;
+            timeout-ms = <100>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         CR {
