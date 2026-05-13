@@ -107,7 +107,7 @@
 
         QM {
             bindings = <&kp QUESTION>;
-            key-positions = <38 39>;
+            key-positions = <28 29>;
             timeout-ms = <100>;
             layers = <0>;
         };
